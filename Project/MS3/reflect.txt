@@ -1,0 +1,47 @@
+/*/////////////////////////////////////////////////////////////////////////
+                        Final Project
+Full Name  :    David Zaprudskiy
+Student ID#:    147850226
+Email      :    dzaprudskiy@myseneca.ca
+Section    :    NRA
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider.
+/////////////////////////////////////////////////////////////////////////*/
+
+
+Reflection on the Project:
+
+This project showcased the effective application of object-oriented programming (OOP) principles, emphasizing modularization and encapsulation. Key classes such as Station, Workstation, CustomerOrder, Utilities, and LineManager demonstrated a well-organized code structure that promotes reusability and maintainability. The implementation of member functions, such as setFieldWidth and extractToken in the Utilities class, encapsulated specific functionalities related to field width and token extraction.
+
+void Utilities::setFieldWidth(size_t newWidth) {
+    m_widthField = newWidth;
+}
+
+std::string Utilities::extractToken(const std::string& str, size_t& next_pos, bool& more) {}
+
+
+The project also incorporated exception handling to address potential errors, such as file opening failures or unexpected input scenarios. Notably, the Utilities::extractToken function utilized std::runtime_error to provide informative error messages in case of unexpected situations.
+
+
+throw std::runtime_error("ERROR: No token.");
+
+
+The use of Standard Template Library (STL) containers, including std::deque, and algorithms like std::find_if demonstrated proficiency in leveraging C++ standard features. The LineManager class, responsible for reading station connections from a file, showcased effective file handling and parsing techniques.
+
+while (std::getline(ifs, record)) {
+    auto delimiterPos = record.find('|');
+    auto first = std::find_if(stations.begin(), stations.end(), [record, delimiterPos](const Workstation* station) {
+        return station->getItemName() == record.substr(0, delimiterPos);
+    });
+}
+
+Implementing the logic of processing orders by passing them from station to station posed challenges due to its intricate nature. The careful orchestration of functions and modules required meticulous planning to ensure seamless coordination. Managing the order processing through different stations in an assembly line demanded synchronization to achieve the expected behavior. The complexity of the logic underscored the importance of thorough testing and validation to ensure the accurate functioning of the system. Overall, addressing these challenges contributed to the development of a robust and well-architected solution.
+
+
+In conclusion, this project provided a comprehensive hands-on experience with OOP, file handling, exception handling, and the STL. The design choices and effective utilization of C++ features showcase a solid understanding of the covered concepts.
+
+
+
+
+
