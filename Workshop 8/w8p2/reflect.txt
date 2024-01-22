@@ -1,0 +1,16 @@
+/*/////////////////////////////////////////////////////////////////////////
+                        Workshop 8
+Full Name  :    David Zaprudskiy
+Student ID#:    147850226
+Email      :    dzaprudskiy@myseneca.ca
+Section    :    NRA
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider.
+/////////////////////////////////////////////////////////////////////////*/
+
+Workshop 8 focused on the implementation of smart pointers, emphasizing their advantages over raw pointers. The primary benefit of smart pointer syntax, demonstrated in the code, is the automatic management of memory. This feature, exemplified through std::unique_ptr in the excludeSmart function, enhances code safety by eliminating manual memory deallocation and reducing the risk of memory leaks. The key distinction between raw and smart pointer syntax lies in the handling of memory management: raw pointers necessitate explicit deallocation, while smart pointers ensure automatic release when out of scope.
+
+The output during profile exclusion revealed a proliferation of object duplications and subsequent deletions. This behavior results from a combination of raw pointers, explicit memory management, and the absence of a move constructor in the Profile class. To optimize the code and minimize unnecessary copies, a redesign using smart pointers consistently throughout the application, such as std::unique_ptr in the DataBase class, is recommended.
+
+Furthermore, the experiment with std::move() highlighted the importance of implementing a move constructor in the Profile class to facilitate proper resource transfer during moves. Overall, Workshop 8 provided valuable insights into the significance of smart pointers for streamlined memory management and the considerations for efficient resource utilization in C++ applications.

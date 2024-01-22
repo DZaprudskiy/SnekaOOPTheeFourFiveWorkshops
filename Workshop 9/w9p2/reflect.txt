@@ -1,0 +1,23 @@
+/*/////////////////////////////////////////////////////////////////////////
+                        Workshop 9
+Full Name  :    David Zaprudskiy
+Student ID#:    147850226
+Email      :    dzaprudskiy@myseneca.ca
+Section    :    NRA
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider.
+/////////////////////////////////////////////////////////////////////////*/
+
+Workshop 9 focused on multi-threading and the implementation of C++11's thread class, and its application for concurrent programming. The workshop taught the significance of binary files for efficient data storage and retrieval, particularly when handling extensive datasets. Through the utilization of std::ios::binary in file operations, the workshop ensured the preservation of raw data format during reading and writing processes.
+
+The workshop also showed the importance of function binding, such as std::bind, as a mechanism for associating functions with specific arguments. This was useful for passing functions with desired signatures to thread constructors, facilitating the seamless integration of multi-threading into the program structure.
+
+Additionally, the workshop's focus on the advantages of multi-threading, notably its capacity to parallelize tasks and enhance performance. Implementation-wise, concurrent computation of average and variance for distinct data partitions showcased the optimization potential and resource efficiency achieved through multi-threading.
+
+Some challenges this workshop posed included comprehending thread synchronization, managing shared resources, and ensuring robust memory management to avert data races. 
+
+
+
+
+

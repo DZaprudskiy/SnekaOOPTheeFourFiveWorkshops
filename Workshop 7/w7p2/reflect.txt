@@ -1,0 +1,20 @@
+/*/////////////////////////////////////////////////////////////////////////
+                        Workshop 7
+Full Name  :    David Zaprudskiy
+Student ID#:    147850226
+Email      :    dzaprudskiy@myseneca.ca
+Section    :    NRA
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider.
+/////////////////////////////////////////////////////////////////////////*/
+
+This workshop covered several key STL algorithms to manage a global collection of cities and their corresponding COVID-19 data. The `std::accumulate` function was used for calculating the total number of cases and deaths worldwide, helping with code readability and reducing complexity.
+
+Additionally, the `std::for_each` algorithm streamlined the process of displaying COVID-19 data, making the code concise and easy to understand. By abstracting away the iteration logic, it improved maintainability and readability, adhering to the principles of clean code.
+
+The workshop made use of `std::sort` and `std::list::sort` to efficiently sort the data based on different fields, making the project more flexible. Utilizing these algorithms, the programmer ensured optimal performance and readability while handling large datasets.
+
+To mitigate errors arising from client input, the solution proposed the use of an enumeration (enum class) to represent valid sorting fields. By restricting the client's choices to predefined valid options, it prevented invalid string inputs and potential runtime errors. This approach helped with code safety and made the code more robust, eliminating the risk of misspelled or non-existent field names.
+
+In summary, the workshop demonstrated the practical advantages of employing STL algorithms, emphasizing readability, maintainability, and performance. Through careful selection and application of these algorithms, the programmer streamlined the code, ensuring efficient data processing and enhancing overall code quality.
