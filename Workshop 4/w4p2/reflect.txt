@@ -1,0 +1,21 @@
+/*/////////////////////////////////////////////////////////////////////////
+                        Workshop 4
+Full Name  :    David Zaprudskiy
+Student ID#:    147850226
+Email      :    dzaprudskiy@myseneca.ca
+Section    :    NRA
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider.
+/////////////////////////////////////////////////////////////////////////*/
+
+The workshop taught concepts regarding object relationships in C++, specifically focusing on composition and aggregation. In composition, such as in the `CheeseParty` class, there is a strong relationship where the container manages the lifetime of the contained objects. In contrast, the `CheeseShop` class illustrates aggregation, a weaker relationship where the container merely holds references to existing objects without managing their memory. The workshop emphasized the differences in implementing move and copy operations for these relationships. Move operations efficiently transfer ownership of resources, like memory, between objects, enhancing performance. Both `CheeseParty` and `CheeseShop` utilized move semantics, showcasing their capability in resource optimization. Overall, the workshop provided practical applications with real-world scenarios involving object relationships and memory management, ensuring efficient resource usage.
+
+Q1: Composition, as seen in CheeseParty, implies ownership and direct control over objects, while aggregation, exemplified by CheeseShop, holds references without ownership. Both classes use const Cheese** attributes, reflecting different relationships based on ownership semantics.
+
+Q2: Move functions in composition transfer ownership of resources, managing dynamic memory efficiently. In aggregation, move operations are simpler, copying references without deep copying data. Copy functions ensure new objects are created, respecting ownership semantics in both cases.
+
+Q3: Both CheeseShop and CheeseParty have addCheese functions that accept a const Cheese&. In CheeseParty, duplicate checks are implemented to prevent adding the same cheese multiple times. CheeseShop assumes duplicates are allowed, as cheeses can exist in multiple shops.
+
+Q4: To implement removeCheese, CheeseShop needs to iterate through its cheeses, find the target cheese, and remove it from the collection. Additionally, it must iterate through associated CheeseParty instances and ensure the cheese is removed from them as well, requiring a data structure to store these associations efficiently.
+
