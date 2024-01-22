@@ -1,0 +1,18 @@
+/*/////////////////////////////////////////////////////////////////////////
+                        Workshop 2
+Full Name  :    David Zaprudskiy
+Student ID#:    147850226
+Email      :    dzaprudskiy@myseneca.ca
+Section    :    NRA
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider.
+/////////////////////////////////////////////////////////////////////////*/
+
+This workshop encompassed several topics such as copy versus move operations, file input handling, and precise time measurement using the std::chrono library. One key takeaway was the significant performance discrepancy between copy and move operations. It emphasized the importance of implementing move constructors and move assignment operators for efficient resource management, especially for large objects.
+The approach to reading the input file, 'airport_data.csv,' involved parsing it line by line and dynamically allocating memory for airports. This method could be optimized by implementing caching or persistent storage formats to avoid re-reading the file in subsequent program runs, which can enhance application performance when dealing with frequently accessed data.
+The workshop also introduced the concept of different clock types provided by std::chrono, particularly the steady_clock and system_clock. Understanding their distinctions is very important: the steady_clock offers high-resolution, consistent time measurements ideal for benchmarking and performance evaluation, while the system_clock reflects real-world time and is subject to system adjustments such as time zone changes or daylight saving time.
+Challenges encountered included correctly implementing move operations and ensuring proper resource release. Additionally, adapting to the usage of std::chrono for precise timing required research and experimentation. 
+
+
+
